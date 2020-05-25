@@ -22,6 +22,17 @@
         Super Smash Bros. Melee, conocido en Japón como Dairantō Smash Brothers DX (大乱闘スマッシュブラザーズＤＸ Dairantō Sumasshu Burazāzu Derakkusu?, lit. «Gran estruendo confuso de hermanos»), a veces abreviado como SSBM o simplemente Melee, es un juego de lucha y acción crossover lanzado para la Nintendo GameCube en el año 2001 en Japón y los Estados Unidos, y en el 2002 en Europa y Australia. Es el sucesor del juego de Nintendo 64 de 1999 Super Smash Bros., y el predecesor del juego de Wii de 2008 Super Smash Bros. Brawl. El juego fue desarrollado por HAL Laboratory, siendo Masahiro Sakurai el director de la producción.
         El juego se centra en distintos personajes de franquicias de juegos de Nintendo, tales como Mario, Kirby, Pokémon y The Legend of Zelda. Los escenarios y modos de juego hacen referencia, o toman sus diseños, de juegos populares lanzados por Nintendo.1​ El sistema de juego de Melee ofrece un acercamiento poco ortodoxo al género de los juegos de lucha, puesto que el daño recibido se mide con contadores de porcentaje, en vez de las tradicionales barras de energía vistas en la mayoría de los juegos del género.2​3​ Melee se basa en el éxito de su predecesor al incluir nuevos modos de juego y personajes controlables. Siguiendo la popularidad de su modo multijugador, se han organizado diversos torneos de juegos multijugador de Melee.
       </ion-text>
+      <ion-list>
+        <ion-text style="color: white">Mejores Personajes</ion-text>
+        <ion-item *ngFor= "let personaje of personajes" [routerLink]= "['/page2', personaje.nombre]">
+          <ion-avatar slot="start">
+            <ion-img [src]= "personaje.imagen"></ion-img>
+          </ion-avatar>
+          <ion-label>
+            {{ personaje.nombre }}
+          </ion-label>
+        </ion-item>
+      </ion-list>
     </ion-card-content>
   </ion-card>
 </ion-content>

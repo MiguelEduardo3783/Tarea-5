@@ -31,6 +31,26 @@ const routes: Routes = [
     path: 'page5',
     loadChildren: () => import('./page5/page5.module').then( m => m.Page5PageModule)
   },
+  {
+    path: 'pikachu',
+    loadChildren: () => import('./page1/pikachu/pikachu.module').then( m => m.PikachuPageModule)
+  },
+  {
+    path: 'kirby',
+    loadChildren: () => import('./page1/kirby/kirby.module').then( m => m.KirbyPageModule)
+  },
+  {
+    path: 'fox',
+    loadChildren: () => import('./page1/fox/fox.module').then( m => m.FoxPageModule)
+  },
+  {
+    path: 'captain-falcon',
+    loadChildren: () => import('./page1/captain-falcon/captain-falcon.module').then( m => m.CaptainFalconPageModule)
+  },
+  {
+    path: 'mario',
+    loadChildren: () => import('./page1/mario/mario.module').then( m => m.MarioPageModule)
+  },
 ];
 
 @NgModule({

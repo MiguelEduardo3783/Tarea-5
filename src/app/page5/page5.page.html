@@ -27,6 +27,17 @@
         Sakurai sabía que Ultimate era un título básico para Nintendo y que tenía una base de jugadores dedicada que no quería defraudar, y creía que necesitaba completar estos objetivos para satisfacer a ambos grupos de jugadores, tanto jugadores competitivos veteranos, como jugadores en el que Ultimate es su entrega introductoria, 
         también sin dejar atrás a jugadores casuales, que buscan solamente diversión.
       </ion-text>
+      <ion-list>
+        <ion-text style="color: white">Mejores Personajes</ion-text>
+        <ion-item *ngFor= "let personaje of personajes" [routerLink]= "['/page5', personaje.nombre]">
+          <ion-avatar slot="start">
+            <ion-img [src]= "personaje.imagen"></ion-img>
+          </ion-avatar>
+          <ion-label>
+            {{ personaje.nombre }}
+          </ion-label>
+        </ion-item>
+      </ion-list>
     </ion-card-content>
   </ion-card>
 </ion-content>

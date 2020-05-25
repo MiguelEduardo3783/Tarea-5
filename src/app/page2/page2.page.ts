@@ -9,6 +9,29 @@ export class Page2Page implements OnInit {
 
   constructor() { }
 
+  personajes = [
+    {
+      nombre: "falco",
+      imagen: "assets/Falco_-_Super_Smash_Bros._Melee.png"
+    },
+    {
+      nombre: "marth",
+      imagen: "assets/pngocean.com.png"
+    },
+    {
+      nombre: "sheik",
+      imagen: "assets/Sheik_-_Super_Smash_Bros._Melee.png"
+    },
+    {
+      nombre: "jigglypuff",
+      imagen: "assets/5380.png"
+    },
+    {
+      nombre: "peach",
+      imagen: "assets/Peach_-_Super_Smash_Bros._Melee.png"
+    }
+  ]
+
   ngOnInit() {
   }
 

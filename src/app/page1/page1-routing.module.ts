@@ -7,6 +7,26 @@ const routes: Routes = [
   {
     path: '',
     component: Page1Page
+  },
+  {
+    path: 'pikachu',
+    loadChildren: () => import('./pikachu/pikachu.module').then( m => m.PikachuPageModule)
+  },
+  {
+    path: 'kirby',
+    loadChildren: () => import('./kirby/kirby.module').then( m => m.KirbyPageModule)
+  },
+  {
+    path: 'fox',
+    loadChildren: () => import('./fox/fox.module').then( m => m.FoxPageModule)
+  },
+  {
+    path: 'captain-falcon',
+    loadChildren: () => import('./captain-falcon/captain-falcon.module').then( m => m.CaptainFalconPageModule)
+  },
+  {
+    path: 'mario',
+    loadChildren: () => import('./mario/mario.module').then( m => m.MarioPageModule)
   }
 ];
 

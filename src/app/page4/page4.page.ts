@@ -7,9 +7,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Page4Page implements OnInit {
 
-  IsPlaying = false;
-
   constructor() { }
+
+  personajes = [
+    {
+      nombre: "roy",
+      imagen: "assets/main.webp"
+    },
+    {
+      nombre: "richter-belmont",
+      imagen: "assets/main8.webp"
+    },
+    {
+      nombre: "lucina",
+      imagen: "assets/Lucina_SSB4.png"
+    },
+    {
+      nombre: "mewtwo",
+      imagen: "assets/main 1.webp"
+    },
+    {
+      nombre: "wario",
+      imagen: "assets/Warioland_Wario_-_Super_Smash_Bros._for_Nintendo_3DS_and_Wii_U.png"
+    }
+  ]
+
 
   ngOnInit() {
   }

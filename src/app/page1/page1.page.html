@@ -27,6 +27,17 @@
         Así, mientras Iwata estaba fascinado con las posibilidades de la N64, sus cuatro puertos y aquel icónico mando, Sakurai fantaseaba con reinventar los juegos de lucha a través de nuevas experiencias, introducir nuevos elementos y -a la vez- hacerlo todo más sencillo e intuitivo, permitiendo que más jugadores participasen a la vez.
         Aquella idea fue cobrando forma de manera natural bajo una simple premisa: cuatro jugadores, todos contra todos.  
       </ion-text>
+      <ion-list>
+        <ion-text style="color: white">Mejores Personajes</ion-text>
+        <ion-item *ngFor= "let personaje of personajes" [routerLink]= "['/page1', personaje.nombre]">
+          <ion-avatar slot="start">
+            <ion-img [src]= "personaje.imagen"></ion-img>
+          </ion-avatar>
+          <ion-label>
+            {{ personaje.nombre }}
+          </ion-label>
+        </ion-item>
+      </ion-list>
     </ion-card-content>
   </ion-card>
 </ion-content>

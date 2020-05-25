@@ -24,6 +24,17 @@
         El desarrollo del juego comenzó en octubre de 2005​ con un equipo que incluyó a miembros de Nintendo y de algunas third party. 
         Después de varios retrasos por problemas técnicos, el juego fue finalmente lanzado en Japón el 31 de enero de 2008, el 9 de marzo de 2008 en Norteamérica,​ el 26 de junio de 2008 en Australia y el 27 de junio de 2008 en Europa.​ Veintisiete meses después del lanzamiento japonés, el juego fue lanzado en Corea del Sur, el 29 de abril de 2010.
       </ion-text>
+      <ion-list>
+        <ion-text style="color: white">Mejores Personajes</ion-text>
+        <ion-item *ngFor= "let personaje of personajes" [routerLink]= "['/page3', personaje.nombre]">
+          <ion-avatar slot="start">
+            <ion-img [src]= "personaje.imagen"></ion-img>
+          </ion-avatar>
+          <ion-label>
+            {{ personaje.nombre }}
+          </ion-label>
+        </ion-item>
+      </ion-list>
     </ion-card-content>
   </ion-card>
 </ion-content>

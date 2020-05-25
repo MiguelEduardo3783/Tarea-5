@@ -9,7 +9,7 @@
 <ion-content>
   <ion-card>
     <ion-card-header>
-      <ion-item (click)="Sonido(IsPlaying)">
+      <ion-item (click)="Sonido()">
         <ion-avatar slot="start">
           <ion-img src="assets/SSB4.webp"></ion-img>  
         </ion-avatar>
@@ -24,6 +24,17 @@
         y en lugar de una barra de vida contamos con un medidor de porcentaje, el cual indica cuanto daño ha recibido el oponente, y a más daño, más fácil será echar al oponente fuera del escenario, a diferencia de un sistema de juego de pelea tradicional donde se debe noquear al oponente vaciando su barra de vida.
         El juego ha sido publicado para Nintendo 3DS y Wii U. El director y creador Masahiro Sakurai mencionó en la sesión de demos del E3 que ambas versiones tendrán el mismo plantel de personajes sin embargo, los escenarios sí variarán dependiendo de la versión.
       </ion-text>
+      <ion-list>
+        <ion-text style="color: white">Mejores Personajes</ion-text>
+        <ion-item *ngFor= "let personaje of personajes" [routerLink]= "['/page4', personaje.nombre]">
+          <ion-avatar slot="start">
+            <ion-img [src]= "personaje.imagen"></ion-img>
+          </ion-avatar>
+          <ion-label>
+            {{ personaje.nombre }}
+          </ion-label>
+        </ion-item>
+      </ion-list>
     </ion-card-content>
   </ion-card>
 </ion-content>

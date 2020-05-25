@@ -1,0 +1,32 @@
+<ion-header translucent="true">
+  <ion-card>
+    <ion-toolbar>
+      <ion-img routerLink="/home" style="width: 50px; height: 50px;" src="assets/flecha2.png"></ion-img>
+    </ion-toolbar>
+  </ion-card>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-item (click)="Sonido()">
+        <ion-avatar slot="start">
+          <ion-img src="assets/SSB.png"></ion-img>  
+        </ion-avatar>
+        <ion-label><strong>Super Smash Bros. 64 Intro Song</strong></ion-label>
+      </ion-item>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-card><iframe width="400" height="250" src="https://www.youtube.com/embed/cYvoDkIS7e4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></ion-card>
+      <ion-text class="ion-text-justify" style="color: white">
+        Hace 20 años todo el mundo quería su propio juego de lucha. O al menos un sucedáneo de Street Fighter o Mortal Kombat. Sin embargo, en el caso de  Super Smash Bros. se podría decir que el verdadero impulsor del todos-contra-todos de Nintendo fue la propia la voluntad de dos leyendas del videojuego de reinventar el propio género a través de dos elementos tan intangibles como esenciales: el talento y la magia nintendera.
+        Pongámonos en situación: a raíz del éxito de Street Fighter II hubo un verdadero boom por los uno-contra-uno en recreativas y consolas, de modo que (casi) todos querían su trozo del pastel. Lo cual, por otro lado, derivó en un pequeño gran problema: las mecánicas eran cada vez más avanzadas, precisas  y retorcidas y, en consecuencia, para muchos el elemento diversión se estaba perdiendo.
+        Pese a que la saga Super Smash Bros. se considera en la actualidad uno de los buques insignia de cada consola nintendera, sus inicios fueron fruto de la casualidad. Es más, Nintendo no contemplaba reunir a sus estrellas en un mismo juego cuando el proyecto ya estaba en sus fases iniciales.
+        De hecho, la fase inicial de Super Smash Bros. no fue muy diferente a la de The Legend of Zelda: Links Awakening, ya que su desarrollo comenzó como proyecto personal durante las horas libres de dos empleados de HAL Laboratory: Satoru Iwata, quién años después presidiría Nintendo, y -cómo no- el mismísimo Masahiro Sakurai. 
+        En 1998 ambos buscaban la forma de crear un juego único que plasmara el enorme torrente de ideas que ambos habían ido acumulando en la compañía detrás de Kirby y otros grandes éxitos de Nintendo. 
+        Así, mientras Iwata estaba fascinado con las posibilidades de la N64, sus cuatro puertos y aquel icónico mando, Sakurai fantaseaba con reinventar los juegos de lucha a través de nuevas experiencias, introducir nuevos elementos y -a la vez- hacerlo todo más sencillo e intuitivo, permitiendo que más jugadores participasen a la vez.
+        Aquella idea fue cobrando forma de manera natural bajo una simple premisa: cuatro jugadores, todos contra todos.  
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

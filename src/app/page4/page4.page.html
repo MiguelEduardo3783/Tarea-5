@@ -1,0 +1,29 @@
+<ion-header translucent="true">
+  <ion-card>
+    <ion-toolbar>
+      <ion-img routerLink="/home" style="width: 50px; height: 50px;" src="assets/flecha2.png"></ion-img>
+    </ion-toolbar>
+  </ion-card>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-item (click)="Sonido(IsPlaying)">
+        <ion-avatar slot="start">
+          <ion-img src="assets/SSB4.webp"></ion-img>  
+        </ion-avatar>
+        <ion-label><strong>Super Smash Bros. Intro Song</strong></ion-label>
+      </ion-item>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-card><iframe width="400" height="250" src="https://www.youtube.com/embed/jEg86qr9Y14" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></ion-card>
+      <ion-text class="ion-text-justify" style="color: white">
+        Super Smash Bros. for Nintendo 3DS (大乱闘スマッシュブラザーズｆｏｒＮｉｎｔｅｎｄｏ３ＤＳ Dairantō Sumasshu Burazāzu fō Nintendō Surī Dī Esu?) y Super Smash Bros. for Wii U ( 大乱闘スマッシュブラザーズｆｏｒＷｉｉＵ Dairantō Sumasshu Burazāzu fō Wī Yū?) es un videojuego de lucha desarrollado por HAL Laboratory en conjunto con Sora Ltd. y Bandai Namco Games y publicado por Nintendo. 
+        Fue anunciado por primera vez en el Electronic Entertainment Expo 2011. Al igual que sus predecesores, se caracteriza por el sistema de juego, el cual consiste en echar al oponente fuera del escenario, 
+        y en lugar de una barra de vida contamos con un medidor de porcentaje, el cual indica cuanto daño ha recibido el oponente, y a más daño, más fácil será echar al oponente fuera del escenario, a diferencia de un sistema de juego de pelea tradicional donde se debe noquear al oponente vaciando su barra de vida.
+        El juego ha sido publicado para Nintendo 3DS y Wii U. El director y creador Masahiro Sakurai mencionó en la sesión de demos del E3 que ambas versiones tendrán el mismo plantel de personajes sin embargo, los escenarios sí variarán dependiendo de la versión.
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
